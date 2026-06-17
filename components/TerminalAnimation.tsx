@@ -35,14 +35,14 @@ const AGENT_COLOR: Record<AgentName, string> = {
 };
 
 const SCRIPT: Step[] = [
-  { kind: "user", text: "launch campaign \"summer-pricing-A/B\" — get me 3 ad variants, 2 LP drafts, paid + organic plan, ship by Friday" },
+  { kind: "user", text: "launch campaign \"summer-pricing-A/B\" : get me 3 ad variants, 2 LP drafts, paid + organic plan, ship by Friday" },
   { kind: "thinking", text: "MAGAS7 routing brief to 7 agents …" },
   { kind: "agent", agent: "Director", text: "plan locked: 6 day window · 2 hypotheses · $4.2k test budget · channels [Meta · LinkedIn · Reddit · X · Newsletter]" },
   { kind: "agent", agent: "Scout", text: "pulled 47 competitor ads · 12 SOV reports · audience: 4 segments scored by ICP-fit" },
   { kind: "agent", agent: "Scribe", text: "3 ad variants drafted (long / short / contrarian) · 2 LP copies · 6 subject lines · tone aligned to brand voice file" },
   { kind: "agent", agent: "Studio", text: "9 visuals generated · 4 figma frames · brand tokens applied · variants exported in 5 ratios" },
   { kind: "agent", agent: "Conductor", text: "scheduled across 5 channels · UTM tagged · pixels live · approval link sent to #marketing" },
-  { kind: "agent", agent: "Sentinel", text: "brand & legal QA passed · 1 claim flagged — see PR #41" },
+  { kind: "agent", agent: "Sentinel", text: "brand & legal QA passed · 1 claim flagged, see PR #41" },
   { kind: "agent", agent: "Oracle", text: "tracking dashboard built · winner-detection threshold set @ 0.12 CPA delta · alerts wired to Slack" },
   { kind: "done", text: "campaign ready. push to live? [Y/n]" },
 ];

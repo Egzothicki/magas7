@@ -7,7 +7,7 @@ const STEPS = [
   {
     n: "01",
     title: "Wire up your stack",
-    body: "Connect your CMS, ad accounts, analytics, CRM, email, design tool — anything with an API. Agents inherit your auth, never the other way around.",
+    body: "Connect your CMS, ad accounts, analytics, CRM, email, design tool, or anything with an API. Agents inherit your auth, never the other way around.",
     aside: "10 min setup · OAuth or token · everything stays in your accounts",
   },
   {
@@ -36,7 +36,7 @@ export function HowItWorks() {
       id="how"
       eyebrow="How it works"
       title={<>From brief to live <span className="gradient-text-brand">in hours, not weeks.</span></>}
-      subtitle="MAGAS7 is built around four loops: setup, training, direction, and review. After the first two you barely touch them — direction and review become the whole job."
+      subtitle="MAGAS7 is built around four loops: setup, training, direction, and review. After the first two you barely touch them. Direction and review become the whole job."
     >
       <div className="relative mt-16">
         {/* Vertical connector */}
@@ -71,7 +71,7 @@ export function HowItWorks() {
                     <div className="absolute inset-0 grid-bg-fine opacity-50" />
                     <div className="absolute inset-x-0 bottom-0 p-5">
                       <div className="font-mono text-[11px] uppercase tracking-widest text-quiet">{step.title}</div>
-                      <div className="mt-1 text-sm text-mute">[placeholder — see PRD note for ${step.n}]</div>
+                      <div className="mt-1 text-sm text-mute">[placeholder: see PRD note for ${step.n}]</div>
                     </div>
                     <div className="absolute inset-0 bg-gradient-to-tr from-violet/5 via-transparent to-signal/5" />
                   </div>

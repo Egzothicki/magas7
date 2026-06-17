@@ -8,15 +8,15 @@ import { Section } from "./Section";
 const FAQS = [
   {
     q: "Is this a chat product or a real OS?",
-    a: "It's an OS. The chat surface is the front door — under it, agents have tools, state, memory, file systems, scheduling, and integrations. They run multi-day jobs without you babysitting.",
+    a: "It's an OS. The chat surface is the front door. Under it, agents have tools, state, memory, file systems, scheduling, and integrations. They run multi-day jobs without you babysitting.",
   },
   {
     q: "How is this different from Codex / Claude Code, but for marketing?",
-    a: "Same shape, different domain. Codex-style agents write and ship code. MAGAS7-style agents research, write, design, schedule, post, analyze, and protect your brand. Same multi-step, tool-using, file-system-aware loop — purpose-built for marketing work.",
+    a: "Same shape, different domain. Codex-style agents write and ship code. MAGAS7-style agents research, write, design, schedule, post, analyze, and protect your brand. Same multi-step, tool-using, file-system-aware loop, purpose-built for marketing work.",
   },
   {
     q: "Do I lose my brand voice?",
-    a: "Opposite — you gain a versioned, enforceable one. Sentinel learns voice and tone from your past work and blocks anything that drifts. You can revert, branch, or update the voice profile any time.",
+    a: "Opposite: you gain a versioned, enforceable one. Sentinel learns voice and tone from your past work and blocks anything that drifts. You can revert, branch, or update the voice profile any time.",
   },
   {
     q: "Where does my data live?",
@@ -44,7 +44,7 @@ export function Faq() {
       id="faq"
       eyebrow="FAQ"
       title="Questions everyone asks."
-      subtitle="If yours isn't here, ask us on the waitlist form — we read every one."
+      subtitle="If yours isn't here, ask us on the waitlist form. We read every one."
     >
       <div className="mx-auto mt-12 max-w-3xl">
         {FAQS.map((item, i) => {

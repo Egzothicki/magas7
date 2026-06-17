@@ -6,14 +6,14 @@ import { AdIntel } from "./AdIntel";
 import { Wand2, LayoutGrid, Users, Gauge, BarChart3, Rocket } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Ad Engine — MAGAS7",
+  title: "Ad Engine · MAGAS7",
   description:
     "Your AI ad team. Spy on every competitor's ads, find the winning angles, and (soon) generate, launch, and scale campaigns across Meta, TikTok & Google.",
 };
 
 const SOON = [
   { icon: Wand2, name: "Creative Studio", desc: "Turn a winning angle into on-brand ad creatives, copy, and test variants in every ratio." },
-  { icon: Users, name: "Audience Builder", desc: "Custom + lookalike audiences, interest stacks, and exclusion lists — drafted by Scout." },
+  { icon: Users, name: "Audience Builder", desc: "Custom + lookalike audiences, interest stacks, and exclusion lists, drafted by Scout." },
   { icon: LayoutGrid, name: "Campaign Builder", desc: "Assemble full campaigns: objective → ad sets → ads, with targeting and budget splits." },
   { icon: Gauge, name: "Auto-Optimizer", desc: "Pause losers, scale winners, and catch creative fatigue before it burns spend." },
   { icon: BarChart3, name: "Performance Lens", desc: "Live ROAS / CPA dashboards and multi-touch attribution, briefed weekly by Oracle." },
@@ -40,7 +40,7 @@ export default function AdsPage() {
           align="center"
           eyebrow="Shipping next"
           title={<>The rest of the <span className="gradient-text-brand">ad engine.</span></>}
-          subtitle="Ad Intel is step one. The agents are being wired into the full paid-ads lifecycle — from creative to launch to live optimization, across every major platform."
+          subtitle="Ad Intel is step one. The agents are being wired into the full paid-ads lifecycle, from creative to launch to live optimization, across every major platform."
         >
           <div className="mt-14 grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
             {SOON.map((t) => {

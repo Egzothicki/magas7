@@ -37,7 +37,7 @@ export function AdIntel() {
       if (!Array.isArray(d.ads) || !d.ads.length) throw new Error("no results");
       setAds(d.ads); setInsights(d.insights ?? null);
     } catch {
-      setErr("Couldn't pull ads for that — try another term.");
+      setErr("Couldn't pull ads for that. Try another term.");
     } finally {
       setLoading(false);
     }
@@ -60,7 +60,7 @@ export function AdIntel() {
           ref={inputRef}
           value={query}
           onChange={(e) => setQuery(e.target.value)}
-          placeholder="Enter any product, niche, or competitor — e.g. cold plunge tubs"
+          placeholder="Enter any product, niche, or competitor, e.g. cold plunge tubs"
           className="min-w-0 flex-1 bg-transparent py-1.5 text-[15px] text-bone outline-none placeholder:text-quiet"
         />
         <button type="submit" className="shrink-0 rounded-lg bg-signal px-4 py-2 text-sm font-medium text-void transition-transform hover:scale-[1.02]">
@@ -84,7 +84,7 @@ export function AdIntel() {
             <span className="size-2.5 rounded-full bg-[#ff5f57]" /><span className="size-2.5 rounded-full bg-[#febc2e]" /><span className="size-2.5 rounded-full bg-[#28c840]" />
           </div>
           <div className="font-mono text-[12.5px] text-mute">
-            {loading ? "scanning ad libraries…" : <>results for <span className="text-signal">{active || "—"}</span></>}
+            {loading ? "scanning ad libraries…" : <>results for <span className="text-signal">{active || "…"}</span></>}
           </div>
           <div className="ml-auto flex items-center gap-1.5">
             {(["All", "Meta", "TikTok", "Google"] as const).map((p) => (
@@ -142,7 +142,7 @@ export function AdIntel() {
           <aside className="border-t border-edge p-4 lg:border-l lg:border-t-0">
             <div className="mb-4 flex items-center gap-2 font-mono text-[11px] uppercase tracking-[0.14em] text-signal"><Sparkles className="size-3.5" /> AI insights</div>
             {loading || !insights ? (
-              <div className="font-mono text-[12px] text-quiet">{loading ? "synthesizing…" : "—"}</div>
+              <div className="font-mono text-[12px] text-quiet">{loading ? "synthesizing…" : "…"}</div>
             ) : (
               <>
                 <div className="mb-2 text-[12px] text-mute">Top winning angles</div>

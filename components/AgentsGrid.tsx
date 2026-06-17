@@ -104,7 +104,7 @@ export function AgentsGrid() {
                 </div>
                 <h3 className="text-xl font-medium tracking-tight text-bone">
                   {agent.name}
-                  <span className="ml-2 text-sm font-normal text-mute">— {agent.role}</span>
+                  <span className="ml-2 text-sm font-normal text-mute">· {agent.role}</span>
                 </h3>
                 <p className="mt-2 text-[15px] leading-relaxed text-ash">{agent.desc}</p>
                 <div className="mt-5 flex flex-wrap gap-1.5">

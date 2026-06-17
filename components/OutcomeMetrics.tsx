@@ -45,7 +45,7 @@ export function OutcomeMetrics() {
     <Section
       eyebrow="The outcome"
       title={<>What changes when <span className="gradient-text-brand">agents do the work.</span></>}
-      subtitle="Modeled on early MAGAS7 alpha workloads against control teams of comparable size. Results vary — you're not buying a chart, you're buying compounding."
+      subtitle="Modeled on early MAGAS7 alpha workloads against control teams of comparable size. Results vary. You're not buying a chart, you're buying compounding."
     >
       <div className="mt-14 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
         {METRICS.map((m, i) => (

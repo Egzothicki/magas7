@@ -37,7 +37,7 @@ export function FinalCta() {
 
           <p className="mx-auto mt-5 max-w-xl text-pretty text-ash">
             Spin up your agents in minutes. Connect your brand, give the Director a goal, and approve
-            what ships. Free to start — upgrade when you&apos;re ready.
+            what ships. Free to start. Upgrade when you&apos;re ready.
           </p>
 
           <div className="mt-9 flex flex-col items-center justify-center gap-3 sm:flex-row">

@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 @theme {
-  /* Brand palette — deep void with electric agent accents */
+  /* Brand palette: deep void with electric agent accents */
   --color-void: #050507;
   --color-void-50: #08080c;
   --color-surface: #0c0d12;

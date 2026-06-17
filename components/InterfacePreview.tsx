@@ -43,7 +43,7 @@ export function InterfacePreview() {
 
               <div className="mt-5 mb-2 px-2 text-[10px] font-semibold uppercase tracking-widest text-quiet">Threads</div>
               <SidebarItem icon={<MessageSquare className="size-3.5" />} active>summer-pricing A/B</SidebarItem>
-              <SidebarItem icon={<MessageSquare className="size-3.5" />}>q3 launch — narrative</SidebarItem>
+              <SidebarItem icon={<MessageSquare className="size-3.5" />}>q3 launch · narrative</SidebarItem>
               <SidebarItem icon={<MessageSquare className="size-3.5" />}>weekly newsletter</SidebarItem>
               <SidebarItem icon={<GitBranch className="size-3.5" />}>brand voice rev. 4</SidebarItem>
 
@@ -85,7 +85,7 @@ export function InterfacePreview() {
                   9 visuals · 4 Figma frames · all brand-token approved. <span className="underline decoration-violet underline-offset-2">View assets ↗</span>
                 </Bubble>
                 <Bubble role="sentinel">
-                  QA pass. 1 claim flagged on LP-B — substantiation needed before launch.
+                  QA pass. 1 claim flagged on LP-B. Substantiation needed before launch.
                 </Bubble>
               </div>
               <div className="border-t border-edge px-5 py-3">

@@ -30,7 +30,7 @@ export function ToolsGrid() {
       id="tools"
       eyebrow="The toolset"
       title={<>The full marketing stack, <span className="gradient-text-brand">agent-operable.</span></>}
-      subtitle="MAGAS7 gives every agent a deep, real-world toolset. No toy demos. These are the surfaces your team actually works in — wired up so agents can use them safely."
+      subtitle="MAGAS7 gives every agent a deep, real-world toolset. No toy demos. These are the surfaces your team actually works in, wired up so agents can use them safely."
     >
       <div className="mt-14 grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
         {TOOLS.map((tool, i) => {
