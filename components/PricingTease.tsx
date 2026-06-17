@@ -15,7 +15,7 @@ const TIERS = [
       "Bring your own keys",
       "Community support",
     ],
-    cta: "Join waitlist",
+    cta: "Start free",
     accent: false,
   },
   {
@@ -30,7 +30,7 @@ const TIERS = [
       "Slack + email integrations",
       "Priority support",
     ],
-    cta: "Early-access pricing",
+    cta: "Get Studio",
     accent: true,
   },
   {
@@ -90,7 +90,7 @@ export function PricingTease() {
               ))}
             </ul>
             <a
-              href="#waitlist"
+              href={tier.name === "Operator" ? "mailto:info.gorecki@gmail.com" : "https://app.magas7.com/login"}
               className={`mt-7 inline-flex w-full items-center justify-center gap-2 rounded-full px-5 py-2.5 text-sm font-medium transition-transform hover:scale-[1.01] ${
                 tier.accent
                   ? "bg-signal text-void"

@@ -53,19 +53,16 @@ export function Header() {
 
         <div className="hidden items-center gap-3 md:flex">
           <a
-            href="#waitlist"
+            href="https://app.magas7.com/login"
             className="rounded-full border border-edge px-3.5 py-1.5 text-sm text-ash transition-colors hover:border-edge-2 hover:bg-surface-2 hover:text-bone"
           >
-            Get waitlist
+            Sign in
           </a>
           <a
-            href="#download"
+            href="https://app.magas7.com/login"
             className="group relative inline-flex items-center gap-2 rounded-full bg-signal px-4 py-1.5 text-sm font-medium text-void transition-transform hover:scale-[1.02]"
           >
-            <span>Download</span>
-            <span className="rounded-full bg-void/15 px-1.5 py-0.5 text-[10px] font-semibold uppercase tracking-wider text-void/80">
-              Soon
-            </span>
+            <span>Start free</span>
           </a>
         </div>
 
@@ -100,12 +97,11 @@ export function Header() {
                 </a>
               ))}
               <a
-                href="#download"
+                href="https://app.magas7.com/login"
                 onClick={() => setOpen(false)}
                 className="mt-2 inline-flex items-center justify-center gap-2 rounded-full bg-signal px-4 py-2 text-sm font-medium text-void"
               >
-                Download
-                <span className="text-[10px] font-semibold uppercase tracking-wider opacity-70">Soon</span>
+                Start free
               </a>
             </div>
           </motion.div>

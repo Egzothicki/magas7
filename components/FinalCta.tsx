@@ -1,27 +1,12 @@
 "use client";
 
-import { useState } from "react";
 import { motion } from "framer-motion";
-import { Download, ArrowRight, Mail, Loader2, CheckCircle2 } from "lucide-react";
+import { ArrowRight, Sparkles } from "lucide-react";
 import { Section } from "./Section";
 
+const APP_URL = "https://app.magas7.com/login";
+
 export function FinalCta() {
-  const [email, setEmail] = useState("");
-  const [state, setState] = useState<"idle" | "sending" | "done" | "error">("idle");
-
-  async function onSubmit(e: React.FormEvent) {
-    e.preventDefault();
-    if (!email) return;
-    setState("sending");
-    // Placeholder — wire to real waitlist endpoint when API is ready.
-    try {
-      await new Promise((r) => setTimeout(r, 700));
-      setState("done");
-    } catch {
-      setState("error");
-    }
-  }
-
   return (
     <Section id="waitlist" className="!pb-32">
       <motion.div
@@ -42,7 +27,7 @@ export function FinalCta() {
               <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-signal opacity-75" />
               <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-signal" />
             </span>
-            Limited early-access cohort
+            Now live · early-access pricing
           </span>
 
           <h2 className="mt-6 text-balance text-4xl font-medium tracking-tight text-bone sm:text-5xl lg:text-6xl">
@@ -51,68 +36,24 @@ export function FinalCta() {
           </h2>
 
           <p className="mx-auto mt-5 max-w-xl text-pretty text-ash">
-            Get on the MAGAS7 waitlist. First invites go out before the public download. Early-access pricing locks in for life.
+            Spin up your agents in minutes. Connect your brand, give the Director a goal, and approve
+            what ships. Free to start — upgrade when you&apos;re ready.
           </p>
 
-          <form onSubmit={onSubmit} className="mx-auto mt-9 max-w-md">
-            <div className="flex items-center gap-2 rounded-full border border-edge bg-void/80 p-1.5 pl-4 backdrop-blur transition-colors focus-within:border-signal">
-              <Mail className="size-4 text-mute" />
-              <input
-                type="email"
-                required
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                placeholder="you@team.com"
-                disabled={state === "done"}
-                className="flex-1 bg-transparent py-2 text-sm text-bone placeholder:text-quiet focus:outline-none"
-              />
-              <button
-                type="submit"
-                disabled={state === "sending" || state === "done"}
-                className="inline-flex items-center gap-1.5 rounded-full bg-signal px-4 py-2 text-sm font-medium text-void transition-transform hover:scale-[1.02] disabled:opacity-70 disabled:hover:scale-100"
-              >
-                {state === "sending" && <Loader2 className="size-3.5 animate-spin" />}
-                {state === "done" && <CheckCircle2 className="size-3.5" />}
-                {state === "idle" && <ArrowRight className="size-3.5" />}
-                {state === "done" ? "You're in" : state === "sending" ? "Sending…" : "Join waitlist"}
-              </button>
-            </div>
-            <p className="mt-3 text-xs text-quiet">
-              No spam. One email when invites open.{" "}
-              <a href="#privacy" className="underline-offset-2 hover:underline">Privacy</a>.
-            </p>
-          </form>
-
-          <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
+          <div className="mt-9 flex flex-col items-center justify-center gap-3 sm:flex-row">
             <a
-              href="#download"
-              className="inline-flex items-center justify-center gap-2 rounded-full border border-edge bg-surface-2/80 px-5 py-2.5 text-sm font-medium text-bone backdrop-blur hover:border-edge-2"
+              href={APP_URL}
+              className="group inline-flex w-full items-center justify-center gap-2 rounded-full bg-signal px-6 py-3 text-base font-medium text-void transition-transform hover:scale-[1.02] sm:w-auto"
             >
-              <Download className="size-4 text-signal" />
-              Download for macOS
-              <span className="rounded-full bg-signal/15 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wider text-signal">
-                Soon
-              </span>
+              Start free
+              <ArrowRight className="size-4 transition-transform group-hover:translate-x-0.5" />
             </a>
             <a
-              href="#download"
-              className="inline-flex items-center justify-center gap-2 rounded-full border border-edge bg-surface-2/80 px-5 py-2.5 text-sm font-medium text-bone backdrop-blur hover:border-edge-2"
+              href={APP_URL}
+              className="inline-flex w-full items-center justify-center gap-2 rounded-full border border-edge bg-surface-2/80 px-6 py-3 text-base font-medium text-bone backdrop-blur hover:border-edge-2 sm:w-auto"
             >
-              <Download className="size-4 text-signal" />
-              Download for Windows
-              <span className="rounded-full bg-signal/15 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wider text-signal">
-                Soon
-              </span>
-            </a>
-            <a
-              href="#download"
-              className="inline-flex items-center justify-center gap-2 rounded-full border border-edge bg-surface-2/80 px-5 py-2.5 text-sm font-medium text-bone backdrop-blur hover:border-edge-2"
-            >
-              <Download className="size-4 text-signal" />
-              Linux
-              <span className="rounded-full bg-signal/15 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wider text-signal">
-                Soon
-              </span>
+              <Sparkles className="size-4 text-signal" />
+              Sign in
             </a>
           </div>
         </div>

@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowRight, Sparkles, Download } from "lucide-react";
+import { ArrowRight, Sparkles } from "lucide-react";
 import { TerminalAnimation } from "./TerminalAnimation";
 
 export function Hero() {
@@ -48,23 +48,18 @@ export function Hero() {
             className="mt-10 flex flex-col items-center justify-center gap-3 sm:flex-row"
           >
             <a
-              href="#download"
-              id="download"
+              href="https://app.magas7.com/login"
               className="group relative inline-flex w-full items-center justify-center gap-2 rounded-full bg-signal px-6 py-3 text-base font-medium text-void transition-transform hover:scale-[1.02] sm:w-auto"
             >
-              <Download className="size-4" />
-              Download MAGAS7
-              <span className="rounded-full bg-void/15 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wider text-void/80">
-                Coming soon
-              </span>
+              Start free
+              <ArrowRight className="size-4 transition-transform group-hover:translate-x-0.5" />
             </a>
             <a
-              href="#waitlist"
+              href="https://app.magas7.com/login"
               className="group inline-flex w-full items-center justify-center gap-2 rounded-full border border-edge bg-surface-2/60 px-6 py-3 text-base font-medium text-bone backdrop-blur transition-colors hover:border-edge-2 hover:bg-surface-2 sm:w-auto"
             >
               <Sparkles className="size-4 text-signal" />
-              Join waitlist
-              <ArrowRight className="size-4 transition-transform group-hover:translate-x-0.5" />
+              Sign in
             </a>
           </motion.div>
 
