@@ -3,13 +3,15 @@
 import { motion } from "framer-motion";
 import { ArrowRight, Sparkles } from "lucide-react";
 import { TerminalAnimation } from "./TerminalAnimation";
+import { HeroCanvas } from "./HeroCanvas";
 
 export function Hero() {
   return (
     <section className="relative isolate overflow-hidden pt-32 pb-24 lg:pt-40 lg:pb-32">
-      {/* Background grid + glow */}
+      {/* Background grid + glow + living agent network */}
       <div className="pointer-events-none absolute inset-0 -z-10">
         <div className="absolute inset-0 grid-bg opacity-30 mask-fade-bottom" />
+        <HeroCanvas />
         <div className="absolute left-1/2 top-1/3 -z-10 h-[520px] w-[800px] -translate-x-1/2 rounded-full bg-violet/15 blur-[160px]" />
         <div className="absolute right-[8%] top-1/4 -z-10 h-[280px] w-[280px] rounded-full bg-signal/15 blur-[120px]" />
       </div>
