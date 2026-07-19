@@ -9,6 +9,9 @@ export const metadata: Metadata = {
   title: "Ad Engine · MAGAS7",
   description:
     "Your AI ad team. Spy on every competitor's ads, find the winning angles, and (soon) generate, launch, and scale campaigns across Meta, TikTok & Google.",
+  alternates: {
+    canonical: "/ads",
+  },
 };
 
 const SOON = [
