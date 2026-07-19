@@ -21,7 +21,7 @@ export function LogoMarquee() {
         >
           Native to the marketing stack you already run
         </motion.p>
-        <div className="relative mask-fade-edges">
+        <div className="relative overflow-hidden mask-fade-edges">
           <div className="flex w-max gap-12 animate-marquee whitespace-nowrap py-2 will-change-transform">
             {[...TOOLS, ...TOOLS].map((t, i) => (
               <span

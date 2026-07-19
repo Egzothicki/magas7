@@ -10,7 +10,12 @@ import {
 
 export function InterfacePreview() {
   return (
-    <Section id="interface" eyebrow="The interface" title={<>One command surface. <span className="gradient-text-brand">Seven specialists.</span></>}>
+    <Section
+      id="interface"
+      eyebrow="The interface"
+      title={<>One command surface. <span className="gradient-text-brand">Seven specialists.</span></>}
+      className="overflow-x-clip"
+    >
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
