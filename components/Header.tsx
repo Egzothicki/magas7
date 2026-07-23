@@ -6,12 +6,12 @@ import { Menu, X } from "lucide-react";
 import { Logo } from "./Logo";
 
 const NAV = [
-  { href: "#agents", label: "Agents" },
+  { href: "/#agents", label: "Agents" },
   { href: "/ads", label: "Ad Engine" },
-  { href: "#tools", label: "Tools" },
-  { href: "#how", label: "How it works" },
-  { href: "#pricing", label: "Pricing" },
-  { href: "#faq", label: "FAQ" },
+  { href: "/#tools", label: "Tools" },
+  { href: "/#how", label: "How it works" },
+  { href: "/#pricing", label: "Pricing" },
+  { href: "/#faq", label: "FAQ" },
 ];
 
 export function Header() {
@@ -35,7 +35,7 @@ export function Header() {
       }`}
     >
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-5 lg:px-8">
-        <a href="#" className="flex items-center" aria-label="MAGAS7 home">
+        <a href="/" className="flex items-center" aria-label="MAGAS7 home">
           <Logo className="text-base" />
         </a>
 
