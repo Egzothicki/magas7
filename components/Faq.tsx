@@ -7,32 +7,24 @@ import { Section } from "./Section";
 
 const FAQS = [
   {
-    q: "Is this a chat product or a real OS?",
-    a: "It's an OS. The chat surface is the front door. Under it, agents have tools, state, memory, file systems, scheduling, and integrations. They run multi-day jobs without you babysitting.",
+    q: "What is MAGAS7 in plain English?",
+    a: "It is an AI marketing team. You give it a campaign goal, and seven specialist agents prepare the research, copy, creative, schedule, checks, and reporting.",
   },
   {
-    q: "How is this different from Codex / Claude Code, but for marketing?",
-    a: "Same shape, different domain. Codex-style agents write and ship code. MAGAS7-style agents research, write, design, schedule, post, analyze, and protect your brand. Same multi-step, tool-using, file-system-aware loop, purpose-built for marketing work.",
+    q: "Does it publish or spend money automatically?",
+    a: "No. Public posts, paid campaigns, claims, and sensitive changes wait for your approval by default.",
   },
   {
-    q: "Do I lose my brand voice?",
-    a: "Opposite: you gain a versioned, enforceable one. Sentinel learns voice and tone from your past work and blocks anything that drifts. You can revert, branch, or update the voice profile any time.",
+    q: "What does it help me make?",
+    a: "Campaign plans, competitor research, ad copy, landing page copy, emails, social posts, creative concepts, publishing plans, QA notes, and performance reports.",
   },
   {
     q: "Where does my data live?",
-    a: "In your accounts. MAGAS7 talks to your stack with your auth, on your machine. We never train on your data. Self-hosted Operator plan available.",
-  },
-  {
-    q: "Which models does it use?",
-    a: "Whatever you want. Frontier models out of the box (Claude, GPT, Gemini), or bring your own API key, or point at a local model for sensitive workloads. Each agent can be on a different model.",
-  },
-  {
-    q: "Will it actually post / send / spend money without me?",
-    a: "Only if you say so. Every shipping action is gated by an approval rule you set. The default is human-in-the-loop on anything that's public or costs money.",
+    a: "Your work stays connected to your accounts and tools. The goal is to help your existing stack work faster, not replace where your data already lives.",
   },
   {
     q: "When does it ship?",
-    a: "Early-access cohort is forming now. Waitlist gets first invites + locked-in early pricing. Public download follows shortly after.",
+    a: "Early-access cohort is forming now. Waitlist gets first invites and locked-in early pricing. Public download follows shortly after.",
   },
 ];
 
@@ -43,15 +35,15 @@ export function Faq() {
     <Section
       id="faq"
       eyebrow="FAQ"
-      title="Questions everyone asks."
-      subtitle="If yours isn't here, ask us on the waitlist form. We read every one."
+      title="Quick answers."
+      subtitle="The basics a visitor needs before they decide whether to try it."
     >
       <div className="mx-auto mt-12 max-w-3xl">
         {FAQS.map((item, i) => {
           const isOpen = openIdx === i;
           return (
             <motion.div
-              key={i}
+              key={item.q}
               initial={{ opacity: 0, y: 6 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-60px" }}
