@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import "./globals.css";
 
 const SITE_URL = "https://magas7.com";
+const SOCIAL_IMAGE = "/magas7-social-card-v2.png";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -31,13 +32,26 @@ export const metadata: Metadata = {
     title: "MAGAS7 · Marketing Agents",
     description:
       "Spin up agents that research, write, design, schedule, post, and analyze. The agentic OS for marketing.",
-    images: [{ url: "/og.png", width: 1200, height: 630, alt: "MAGAS7 · Marketing Agents" }],
+    images: [
+      {
+        url: SOCIAL_IMAGE,
+        width: 1200,
+        height: 630,
+        alt: "MAGAS7. The agentic OS for marketing teams.",
+        type: "image/png",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "MAGAS7 · Marketing Agents",
     description: "The agentic OS for marketing teams. Coming soon.",
-    images: ["/og.png"],
+    images: [
+      {
+        url: SOCIAL_IMAGE,
+        alt: "MAGAS7. The agentic OS for marketing teams.",
+      },
+    ],
   },
   icons: {
     icon: [

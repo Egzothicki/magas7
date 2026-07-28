@@ -1,0 +1,168 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="brand" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#b1ff5a"/>
+      <stop offset="0.5" stop-color="#6cf0ff"/>
+      <stop offset="1" stop-color="#9d6cff"/>
+    </linearGradient>
+    <linearGradient id="headline" x1="70" y1="205" x2="680" y2="330" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#f5f5f7"/>
+      <stop offset="0.55" stop-color="#d8d9df"/>
+      <stop offset="1" stop-color="#9d6cff"/>
+    </linearGradient>
+    <radialGradient id="violetGlow" cx="0" cy="0" r="1" gradientTransform="translate(965 182) rotate(90) scale(330 390)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#6b3df5" stop-opacity="0.42"/>
+      <stop offset="1" stop-color="#6b3df5" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="greenGlow" cx="0" cy="0" r="1" gradientTransform="translate(748 530) rotate(90) scale(255 340)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7df00b" stop-opacity="0.2"/>
+      <stop offset="1" stop-color="#7df00b" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M48 0H0V48" fill="none" stroke="#ffffff" stroke-opacity="0.035"/>
+    </pattern>
+    <filter id="softGlow" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="11" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="panelShadow" x="-30%" y="-30%" width="160%" height="180%">
+      <feDropShadow dx="0" dy="22" stdDeviation="30" flood-color="#000000" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="630" fill="#050507"/>
+  <rect width="1200" height="630" fill="url(#grid)"/>
+  <rect width="1200" height="630" fill="url(#violetGlow)"/>
+  <rect width="1200" height="630" fill="url(#greenGlow)"/>
+  <rect x="1" y="1" width="1198" height="628" rx="28" fill="none" stroke="#262a3a" stroke-width="2"/>
+
+  <g transform="translate(70 58)">
+    <rect width="62" height="62" rx="16" fill="#0c0d12" stroke="#262a3a"/>
+    <path d="M12 47V15h11l8 14 8-14h11v32h-9V29l-7 12h-7l-7-12v18z" fill="url(#brand)"/>
+    <circle cx="50" cy="47" r="4.5" fill="#b1ff5a" filter="url(#softGlow)"/>
+    <text x="82" y="42" fill="#f5f5f7" font-family="Arial, Helvetica, sans-serif" font-size="31" font-weight="700" letter-spacing="3">MAGAS</text>
+    <text x="204" y="42" fill="#b1ff5a" font-family="Arial, Helvetica, sans-serif" font-size="31" font-weight="700">7</text>
+  </g>
+
+  <g font-family="Arial, Helvetica, sans-serif">
+    <text x="70" y="212" fill="url(#headline)" font-size="62" font-weight="700" letter-spacing="-2.6">
+      The agentic OS
+    </text>
+    <text x="70" y="282" fill="url(#brand)" font-size="62" font-weight="700" letter-spacing="-2.6">
+      for marketing teams.
+    </text>
+    <text x="72" y="342" fill="#c2c4cf" font-size="23" font-weight="400">
+      Seven specialist agents. One command center.
+    </text>
+    <text x="72" y="378" fill="#8b8d9b" font-size="19">
+      You give direction. They do the work.
+    </text>
+  </g>
+
+  <g transform="translate(70 427)" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" letter-spacing="0.8">
+    <g>
+      <rect width="114" height="39" rx="19.5" fill="#11131a" stroke="#262a3a"/>
+      <circle cx="20" cy="19.5" r="4" fill="#b1ff5a"/>
+      <text x="34" y="24" fill="#d8d9df">RESEARCH</text>
+    </g>
+    <g transform="translate(124)">
+      <rect width="88" height="39" rx="19.5" fill="#11131a" stroke="#262a3a"/>
+      <circle cx="20" cy="19.5" r="4" fill="#6cf0ff"/>
+      <text x="34" y="24" fill="#d8d9df">WRITE</text>
+    </g>
+    <g transform="translate(222)">
+      <rect width="98" height="39" rx="19.5" fill="#11131a" stroke="#262a3a"/>
+      <circle cx="20" cy="19.5" r="4" fill="#9d6cff"/>
+      <text x="34" y="24" fill="#d8d9df">DESIGN</text>
+    </g>
+    <g transform="translate(330)">
+      <rect width="124" height="39" rx="19.5" fill="#11131a" stroke="#262a3a"/>
+      <circle cx="20" cy="19.5" r="4" fill="#ffb86b"/>
+      <text x="34" y="24" fill="#d8d9df">SCHEDULE</text>
+    </g>
+    <g transform="translate(464)">
+      <rect width="82" height="39" rx="19.5" fill="#11131a" stroke="#262a3a"/>
+      <circle cx="20" cy="19.5" r="4" fill="#b1ff5a"/>
+      <text x="34" y="24" fill="#d8d9df">POST</text>
+    </g>
+  </g>
+
+  <g transform="translate(70 534)" font-family="Arial, Helvetica, sans-serif">
+    <circle cx="5" cy="-6" r="5" fill="#b1ff5a" filter="url(#softGlow)"/>
+    <text x="22" y="0" fill="#f5f5f7" font-size="19" font-weight="700">magas7.com</text>
+    <text x="143" y="0" fill="#5b5e6e" font-size="18">Marketing Agents</text>
+  </g>
+
+  <g transform="translate(760 100)" filter="url(#panelShadow)">
+    <rect width="370" height="430" rx="24" fill="#0c0d12" fill-opacity="0.96" stroke="#262a3a" stroke-width="2"/>
+    <path d="M0 64H370" stroke="#1c1f2b"/>
+    <circle cx="28" cy="32" r="6" fill="#ff6b6b"/>
+    <circle cx="49" cy="32" r="6" fill="#ffb86b"/>
+    <circle cx="70" cy="32" r="6" fill="#b1ff5a"/>
+    <rect x="258" y="21" width="85" height="22" rx="11" fill="#11131a" stroke="#262a3a"/>
+    <circle cx="275" cy="32" r="4" fill="#b1ff5a"/>
+    <text x="286" y="36" fill="#8b8d9b" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="700">ONLINE</text>
+
+    <g stroke-width="1.5">
+      <path d="M185 224L81 124M185 224L185 102M185 224L289 124M185 224L87 220M185 224L283 220M185 224L112 328M185 224L258 328" stroke="#6cf0ff" stroke-opacity="0.32"/>
+      <circle cx="185" cy="224" r="96" fill="none" stroke="#9d6cff" stroke-opacity="0.14"/>
+      <circle cx="185" cy="224" r="148" fill="none" stroke="#b1ff5a" stroke-opacity="0.08"/>
+    </g>
+
+    <g font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="700" text-anchor="middle">
+      <g transform="translate(81 124)">
+        <circle r="25" fill="#11131a" stroke="#b1ff5a"/>
+        <circle r="6" fill="#b1ff5a" filter="url(#softGlow)"/>
+        <text y="43" fill="#8b8d9b">RESEARCH</text>
+      </g>
+      <g transform="translate(185 102)">
+        <circle r="25" fill="#11131a" stroke="#6cf0ff"/>
+        <circle r="6" fill="#6cf0ff" filter="url(#softGlow)"/>
+        <text y="43" fill="#8b8d9b">WRITE</text>
+      </g>
+      <g transform="translate(289 124)">
+        <circle r="25" fill="#11131a" stroke="#9d6cff"/>
+        <circle r="6" fill="#9d6cff" filter="url(#softGlow)"/>
+        <text y="43" fill="#8b8d9b">DESIGN</text>
+      </g>
+      <g transform="translate(87 220)">
+        <circle r="25" fill="#11131a" stroke="#ffb86b"/>
+        <circle r="6" fill="#ffb86b" filter="url(#softGlow)"/>
+        <text y="43" fill="#8b8d9b">SCHEDULE</text>
+      </g>
+      <g transform="translate(283 220)">
+        <circle r="25" fill="#11131a" stroke="#b1ff5a"/>
+        <circle r="6" fill="#b1ff5a" filter="url(#softGlow)"/>
+        <text y="43" fill="#8b8d9b">POST</text>
+      </g>
+      <g transform="translate(112 328)">
+        <circle r="25" fill="#11131a" stroke="#6cf0ff"/>
+        <circle r="6" fill="#6cf0ff" filter="url(#softGlow)"/>
+        <text y="43" fill="#8b8d9b">ANALYZE</text>
+      </g>
+      <g transform="translate(258 328)">
+        <circle r="25" fill="#11131a" stroke="#9d6cff"/>
+        <circle r="6" fill="#9d6cff" filter="url(#softGlow)"/>
+        <text y="43" fill="#8b8d9b">PROTECT</text>
+      </g>
+    </g>
+
+    <g transform="translate(185 224)">
+      <circle r="57" fill="#050507" stroke="url(#brand)" stroke-width="2.5"/>
+      <circle r="47" fill="#11131a"/>
+      <path d="M-27 20V-20h13l14 24 14-24h13v40H16V-2L6 15H-6L-16-2v22z" fill="url(#brand)"/>
+      <circle cx="29" cy="22" r="5" fill="#b1ff5a" filter="url(#softGlow)"/>
+    </g>
+
+    <g transform="translate(24 395)" font-family="Arial, Helvetica, sans-serif">
+      <rect width="322" height="20" rx="10" fill="#11131a"/>
+      <rect width="246" height="20" rx="10" fill="#b1ff5a" fill-opacity="0.12"/>
+      <circle cx="12" cy="10" r="4" fill="#b1ff5a"/>
+      <text x="25" y="14" fill="#8b8d9b" font-size="11">7 agents ready for direction</text>
+      <text x="298" y="14" fill="#b1ff5a" font-size="11" font-weight="700">7/7</text>
+    </g>
+  </g>
+</svg>
