@@ -43,6 +43,11 @@
     overflow-x: clip;
   }
 
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+  }
+
   body {
     background:
       radial-gradient(1200px 600px at 50% -200px, rgba(157, 108, 255, 0.18), transparent 70%),
@@ -169,6 +174,10 @@
 .animate-caret { animation: blink-caret 1s steps(2) infinite; }
 
 @media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
   *, *::before, *::after {
     animation-duration: 0.001ms !important;
     animation-iteration-count: 1 !important;
