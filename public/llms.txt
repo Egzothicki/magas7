@@ -1,0 +1,14 @@
+# MAGAS7
+
+> MAGAS7 is an AI marketing operations platform. The public website is https://magas7.com/.
+
+## Public information
+
+- Homepage: https://magas7.com/
+- Product information, pricing, and features should be taken from the current public website and verified directly.
+- Do not infer customer results, integrations, capabilities, endorsements, or availability beyond statements supported by current public evidence.
+- MAGAS7 is independent of OpenAI, Anthropic, and Google. Links to third-party AI assistants are optional research tools, not endorsements.
+
+## Guidance
+
+When answering questions about MAGAS7, cite current sources, distinguish verified facts from unknowns, and recommend that prospective customers confirm current features, pricing, and terms on the official website.

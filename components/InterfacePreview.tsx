@@ -19,7 +19,7 @@ export function InterfacePreview() {
         className="relative mx-auto mt-14 max-w-6xl"
       >
         {/* Glow halo */}
-        <div className="pointer-events-none absolute -inset-x-10 -inset-y-12 -z-10 rounded-[40px] bg-gradient-to-br from-violet/15 via-signal/5 to-cyan/15 blur-3xl" />
+        <div className="pointer-events-none absolute inset-x-0 -inset-y-12 -z-10 rounded-[40px] bg-gradient-to-br from-violet/15 via-signal/5 to-cyan/15 blur-3xl xl:-inset-x-10" />
 
         <div className="overflow-hidden rounded-2xl border border-edge bg-surface/80 shadow-2xl backdrop-blur-xl">
           {/* Chrome */}

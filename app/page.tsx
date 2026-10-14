@@ -11,6 +11,7 @@ import { PricingTease } from "@/components/PricingTease";
 import { Faq } from "@/components/Faq";
 import { FinalCta } from "@/components/FinalCta";
 import { Footer } from "@/components/Footer";
+import { ReviewPrompts } from "@/components/ReviewPrompts";
 
 export default function HomePage() {
   return (
@@ -27,6 +28,7 @@ export default function HomePage() {
         <Comparison />
         <PricingTease />
         <Faq />
+        <ReviewPrompts />
         <FinalCta />
       </main>
       <Footer />
